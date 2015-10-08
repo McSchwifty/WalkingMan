@@ -71,7 +71,7 @@ namespace WalkingMan
 
                 this.Refresh();
                 Thread.Sleep(100);
-
+                this.picMan.Left = picMan.Left - 10;
 
 
             } while (loopCounter < 10);
