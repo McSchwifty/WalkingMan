@@ -1,6 +1,7 @@
 ﻿// Andrew Mackinnon
 // October 8 2015
-// 
+// ICS3UR
+// This makes a man walk
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
