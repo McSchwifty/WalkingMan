@@ -76,5 +76,60 @@ namespace WalkingMan
 
             } while (loopCounter < 10);
         }
+
+        private void btnWalkRight_Click(object sender, EventArgs e)
+        {
+            int loopCounter = 0;
+
+            do
+            {
+
+                if (loopCounter == 9)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk2;
+                }
+                else if (loopCounter == 8)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk3;
+                }
+                else if (loopCounter == 7)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk4;
+                }
+                else if (loopCounter == 6)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk5;
+                }
+                else if (loopCounter == 5)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk6;
+                }
+                else if (loopCounter == 4)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk7;
+                }
+                else if (loopCounter == 3)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk8;
+                }
+                else if (loopCounter == 2)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk9;
+                }
+                else if (loopCounter == 1)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk10;
+                }
+                else if (loopCounter == 0)
+                {
+                    this.picMan.Image = WalkingMan.Properties.Resources.walk1;
+                }
+                loopCounter = loopCounter + 1;
+                Thread.Sleep(100);
+                this.Refresh();
+                this.picMan.Left = picMan.Left + 10;
+
+            } while (loopCounter < 10);
+        }
     }
 }
